@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/dashboard.dart';
+import 'package:get/get.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -85,7 +87,8 @@ class _loginState extends State<login> {
             ),
             ElevatedButton(
               onPressed: () {
-              print('ini tombol masuk');
+                Get.offAll(Dashboard());
+          
             }, 
             style: ElevatedButton.styleFrom(
               minimumSize: Size.fromHeight(50),
